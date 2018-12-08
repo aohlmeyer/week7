@@ -12,14 +12,16 @@ print (len(dnaSeq))
 #Each of the following should count the individual bases in the sequence 
 
 print ("Number of As:")
-print (dnaSeq.count('A'))
+print (dnaSeq.upper().count('A'))
 
 print ("Number of Ts:")
-print (dnaSeq.count('T'))
+print (dnaSeq.upper().count('T'))
 
 print ("Number of Gs:")
-print (dnaSeq.count('G'))
+print (dnaSeq.upper().count('G'))
 
 print ("Number of Cs:")
-print (dnaSeq.count('C'))
+print (dnaSeq.upper().count('C'))
 
+# DB: Good! Although, it doesn't count properly if the sequence is lower case. You can
+#     avoid this by adding .upper() to modify your sequence.
